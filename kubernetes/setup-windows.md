@@ -45,6 +45,8 @@ This document is not intended to teach the basics of Kubernetes. This document a
 
 ### cURL
 
+**Priority: Required (High)**
+
 [cURL](https://curl.se/) is a tool with which I recommend developers become familiar - it's used (and contributed to) by a large number of companies. To describe cURL, I will borrow directly from the cURL homepage: 
 
 > curl is used in command lines or scripts to transfer data.
@@ -55,4 +57,21 @@ That's it. cURL supports a wide range of protocols - again from the documentatio
 
 In a full-stack Engineering context, it's often used as a catalyst for HTTP transactions. And that's how we will use it. If you open Windows Powershell and execute `curl` in the terminal you will notice output is logged to the console. Do not be fooled by Powershell, here: this is Powershell aliasing it's own `Invoke-WebRequest` command (and it's stupidly misleading). Don't worry about that for now, we'll solve that, soon.
 
+We will use cURL to install Kubernetes on our machines. 
+
 ![cURL default on windows](./assets/windows-curl-invokePNG.PNG)
+
+Getting cURL on a Windows machine is a bit tedious. I'll reproduce the steps, here. For a more thorough explanation, I encourage you to read the [StackOverflow answer on installing cURL on Windows](https://stackoverflow.com/a/16216825/3469725).
+
+To get cURKL on your Windows machine, simply: 
+
+1. Visit the [cURL Windows packages repository](https://curl.se/windows/).
+1. Download the correct _.zip_ file for your environment.
+1. Extract the executable contents of that file to a permanent location on your machine. I chose `C:\Program Files\curl` (a directory I created in `Program Files`).
+    - the executable contents of that file are most likely found in the `\bin` directory of the extract. I copied the entire contents of the `\bin` directory: the `.dll`, `.exe`, `.crt`, and `.def` files.
+1. Add the location of the `.exe` file to you Windows Environmental Variables System PATH. 
+
+**Not Done Yet**
+
+
+
