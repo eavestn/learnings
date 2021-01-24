@@ -97,7 +97,7 @@ You should get some more meaningful output:
 
 **Priority: Required (High)**
 
-[Chocolately](https://chocolatey.org/about) is a Windows-oriented package manager that enables users to install utilities (software) via the command line. Installing it on a Windows machine looks a bit tricky when consulting their documentation, but the underpinnins are quite simple. 
+[Chocolately](https://chocolatey.org/about) is a Windows-oriented package manager that enables users to install utilities (software) via the command line. Installing it on a Windows machine looks a bit tricky when consulting their documentation, but the conceptual underpinnings and the procedure itself are quite simple. 
 
 :heavy_check_mark: We will use Chocolatey as a part of our Kubernetes development environment set up. 
 
