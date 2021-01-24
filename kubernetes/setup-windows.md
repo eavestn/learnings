@@ -15,7 +15,7 @@ Windows feels like the bastard child no one wants to acknowledge. Occasionally, 
 
 #### Windows Has Every Opinion
 
-Microsoft wants to be the cool kid. This deep desire is reflected in _everything_ Microsoft releases: languages, editors, utilities, short cuts, cloud solutions, etc. Microsoft doesn't really seem to break ground (VS Code; TS aside). Microsoft isn't the trend setter (sorry Microsoft, I promise I love you), Microsoft is the trend follower. By many developers, engineers, support specialists - whatever the professional flavor - Microsoft seems to always have been deemed wholly incomplete; so much so that one of the first things I used to tell my students to do - or my new-to-field colleagues - was install some sort of terminal emulator like [Cmder](https://cmder.net/) because Windows never did everything as quickly as you wanted it to.
+Microsoft wants to be the cool kid. This deep desire is reflected in _everything_ Microsoft releases: languages, editors, utilities, short cuts, cloud solutions, etc. Microsoft doesn't really seem to break ground (VS Code; TS aside). Microsoft isn't the trend setter (sorry Microsoft, I promise I love you), Microsoft is the trend follower. By many developers, engineers, support specialists - whatever the professional flavor - Microsoft seems to always have been deemed wholly incomplete; so much so that one of the first things I used to tell my students to do - or my new-to-field colleagues - was install some sort of terminal emulator like [Cmder](https://cmder.net/) because Windows never did everything as quickly as you wanted it to (the reasonings behind this being myriad).
 
 One of my former colleagues hated C#. Unlike a language like Java (which I think is massively behind the times), C# does not have an opinion about how it should be written. Opinions about its composition are not built into the language through the lack of feature set additions. C# sees another language - say Java or JavaScript - adopt a functionality - say lambda functions or duck typing - and without care for its relevance integrates it.
 
@@ -24,5 +24,11 @@ All of this is to say: **knowing** how to do something _right_ in the complex wo
 ### Could I Learn This Elsewhere? 
 
 Probably. I learn by writing. So while - hopefully - you learn by reading my ramblings, I learn by composing this document.
+
+## What This Document Is Not
+
+**Priority: Medium**
+
+This document is not intended to teach the basics of Kubernetes. This document assumes you already know why you want to install Kubernetes on your local machine.
 
 
