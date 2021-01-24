@@ -6,12 +6,12 @@
 
 Engineering is increasingly so a matter of stringing together the right resources - nicely wrapping and applying glue to the orthogonal boundaries between services.
 Many resources on the web are partial, lack thorough research, or - simply - are piecemeal hacks solving problems that have _better_ solutions. This entry in my _learnings_
-repository coherently strings together official (and unofficial) documentation to increase your confidence that you are applying glue in the right areas - and doing so
-with a bit of finesse that will make you feel like the programmer god you love to feel like.
+repository strings together official (and unofficial) documentation to increase your confidence that you are applying glue in the right areas - and doing so
+with a bit of finesse that will make you feel like a programmer god.
 
 ### Anything Windows Sucks
 
-Windows feels like the bastard child no one wants to acknowledge. Occasionally, Windows shows up to dinner - strung out, hungover, down on its luck - and our parental sympathies kick in: "I _guess_ I should support you". Linux and Mac roll their eyes and the hardcore Engineer parents regurgitate some meaningless platitudes. But Windows doesn't have to suck - in fact, familiarize yourself with the [recently-revamped Powershell (WSL2)](https://docs.microsoft.com/en-us/windows/wsl/about) and the beauty of Windows OS begins to unveil.
+Windows sometimes feels like the bastard child no one in the family wants to acknowledge. Windows shows up to dinner - strung out, hungover, down on its luck - and our parental sympathies kick in: "I _guess_ I should support you". Linux and Mac roll their eyes and the hardcore Engineer parents regurgitate some meaningless platitudes. But Windows doesn't have to suck - in fact, familiarize yourself with the [recently-revamped Powershell (WSL2)](https://docs.microsoft.com/en-us/windows/wsl/about) and the beauty of Windows OS begins to unveil.
 
 #### Windows Has Every Opinion
 
@@ -37,6 +37,6 @@ This document is not intended to teach the basics of Kubernetes. This document a
 
 1. This document is supplemental to the official [Kubernetes documentation for setting up Kubernetes on a local environment](https://kubernetes.io/docs/tasks/tools/install-kubectl/). 
 1. This document intends to enable you to follow the Kubernetes documentation seemlessly and more technically while outfitting you with tools to do things in a more sophisticated manner down the road. 
-1. 
+1. This document is meant to get you set up for local Kubernetes development _not_ for deploying Kubernetes-based services to the cloud.
 
 
