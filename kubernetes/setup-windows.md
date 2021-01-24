@@ -41,4 +41,18 @@ This document is not intended to teach the basics of Kubernetes. This document a
 1. This document intends to enable you to follow the Kubernetes documentation seemlessly and more technically while outfitting you with tools to do things in a more sophisticated manner down the road. 
 1. This document is meant to get you set up for local Kubernetes development _not_ for deploying Kubernetes-based services to the cloud.
 
+## Set Up
 
+### cURL
+
+[cURL](https://curl.se/) is a tool with which I recommend developers become familiar - it's used (and contributed to) by a large number of companies. To describe cURL, I will borrow directly from the cURL homepage: 
+
+> curl is used in command lines or scripts to transfer data.
+
+That's it. cURL supports a wide range of protocols - again from the documentation: 
+
+> DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET and TFTP
+
+In a full-stack Engineering context, it's often used as a catalyst for HTTP transactions. And that's how we will use it. If you open Windows Powershell and execute `curl` in the terminal you will notice output is logged to the console. Do not be fooled by Powershell, here: this is Powershell aliasing it's own `Invoke-WebRequest` command (and it's stupidly misleading). Don't worry about that for now, we'll solve that, soon.
+
+![cURL default on windows](./assets/windows-curl-invoke.png)
