@@ -29,6 +29,14 @@ Probably. I learn by writing. So while - hopefully - you learn by reading my ram
 
 **Priority: Medium**
 
-This document is not intended to teach the basics of Kubernetes. This document assumes you already know why you want to install Kubernetes on your local machine.
+This document is not intended to teach the basics of Kubernetes. This document assumes you already know why you want to install Kubernetes on your local machine. There's a lot that goes into understanding Kubernetes (though apparently less than what network administration used to be) and some assumptions are built into this document. I will try to address those as they arise.
+
+## What This Document Is
+
+**Priority: High**
+
+1. This document is supplemental to the official [Kubernetes documentation for setting up Kubernetes on a local environment](https://kubernetes.io/docs/tasks/tools/install-kubectl/). 
+1. This document intends to enable you to follow the Kubernetes documentation seemlessly and more technically while outfitting you with tools to do things in a more sophisticated manner down the road. 
+1. 
 
 
