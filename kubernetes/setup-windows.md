@@ -47,7 +47,7 @@ This document is not intended to teach the basics of Kubernetes. This document a
 
 **Priority: Required (High)**
 
-[cURL](https://curl.se/) is a tool with which I recommend developers become familiar - it's used (and contributed to) by a large number of companies. To describe cURL, I will borrow directly from the cURL homepage: 
+[cURL](https://curl.se/) (pronounced as the word "curl") is a tool with which I recommend developers become familiar - it's used (and contributed to) by a large number of companies. To describe cURL, I will borrow directly from the cURL homepage: 
 
 > curl is used in command lines or scripts to transfer data.
 
@@ -63,7 +63,7 @@ We will use cURL to install Kubernetes on our machines.
 
 Getting cURL on a Windows machine is a bit tedious. I'll reproduce the steps, here. For a more thorough explanation, I encourage you to read the [StackOverflow answer on installing cURL on Windows](https://stackoverflow.com/a/16216825/3469725).
 
-To get cURKL on your Windows machine, simply: 
+To get cURL on your Windows machine, simply: 
 
 1. Visit the [cURL Windows packages repository](https://curl.se/windows/).
 1. Download the correct _.zip_ file for your environment.
@@ -72,6 +72,24 @@ To get cURKL on your Windows machine, simply:
 1. Add the location of the `.exe` file to you Windows Environmental Variables System PATH. 
 
 **Not Done Yet**
+
+Even if you restart your Powershell, you should still get the above output that mocks `curl`. After restarting Powershell (I always run it as an Administrator), run the following command: 
+
+```powersell
+Remove-item alias:curl
+```
+
+You may have to do this on every start of Powershell where you intend to interact with cURL via the command line. This command removes the association of the `curl` keyword with the `WebRequest-Invoke` command mentioned earlier. You shouldn't need to restart Powershell after running this command.
+
+Now, if you run: 
+
+```powershell
+curl --help
+```
+
+You should get some more meaningful output:
+
+![windows curl help](./assets/windows-curl-help.PNG)
 
 
 
