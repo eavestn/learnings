@@ -55,4 +55,4 @@ That's it. cURL supports a wide range of protocols - again from the documentatio
 
 In a full-stack Engineering context, it's often used as a catalyst for HTTP transactions. And that's how we will use it. If you open Windows Powershell and execute `curl` in the terminal you will notice output is logged to the console. Do not be fooled by Powershell, here: this is Powershell aliasing it's own `Invoke-WebRequest` command (and it's stupidly misleading). Don't worry about that for now, we'll solve that, soon.
 
-![cURL default on windows](./assets/windows-curl-invoke.png)
+![cURL default on windows](./assets/windows-curl-invokePNG.png)
