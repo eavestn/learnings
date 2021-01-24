@@ -9,6 +9,8 @@ Many resources on the web are partial, lack thorough research, or - simply - are
 repository strings together official (and unofficial) documentation to increase your confidence that you are applying glue in the right areas - and doing so
 with a bit of finesse that will make you feel like a programmer god.
 
+<img align="right" width="100" height="100" src="./assets/kubernetes.png">
+
 ### Anything Windows Sucks
 
 Windows sometimes feels like the bastard child no one in the family wants to acknowledge. Windows shows up to dinner - strung out, hungover, down on its luck - and our parental sympathies kick in: "I _guess_ I should support you". Linux and Mac roll their eyes and the hardcore Engineer parents regurgitate some meaningless platitudes. But Windows doesn't have to suck - in fact, familiarize yourself with the [recently-revamped Powershell (WSL2)](https://docs.microsoft.com/en-us/windows/wsl/about) and the beauty of Windows OS begins to unveil.
