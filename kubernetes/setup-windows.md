@@ -55,9 +55,11 @@ That's it. cURL supports a wide range of protocols - again from the documentatio
 
 > DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET and TFTP
 
-In a full-stack Engineering context, it's often used as a catalyst for HTTP transactions. And that's how we will use it. If you open Windows Powershell and execute `curl` in the terminal you will notice output is logged to the console. Do not be fooled by Powershell, here: this is Powershell aliasing it's own `Invoke-WebRequest` command (and it's stupidly misleading). Don't worry about that for now, we'll solve that, soon.
+In a full-stack Engineering context, cURL often used as a catalyst for HTTP transactions. And that's how we will use it. 
 
-We will use cURL to install Kubernetes on our machines. 
+:heavy_check_mark: We will use cURL to install Kubernetes on our machines.
+
+If you open Windows Powershell and execute `curl` in the terminal you will notice output is logged to the console. Do not be fooled by Powershell, here: this is Powershell aliasing it's own `Invoke-WebRequest` command (and it's stupidly misleading). Don't worry about that for now, we'll solve that, soon.
 
 ![cURL default on windows](./assets/windows-curl-invokePNG.PNG)
 
@@ -71,7 +73,7 @@ To get cURL on your Windows machine, simply:
     - the executable contents of that file are most likely found in the `\bin` directory of the extract. I copied the entire contents of the `\bin` directory: the `.dll`, `.exe`, `.crt`, and `.def` files.
 1. Add the location of the `.exe` file to you Windows Environmental Variables System PATH. 
 
-**Not Done Yet**
+#### Not Done Yet
 
 Even if you restart your Powershell, you should still get the above output that mocks `curl`. After restarting Powershell (I always run it as an Administrator), run the following command: 
 
@@ -90,6 +92,17 @@ curl --help
 You should get some more meaningful output:
 
 ![windows curl help](./assets/windows-curl-help.PNG)
+
+### Chocolatey
+
+**Priority: Required (High)**
+
+[Chocolately](https://chocolatey.org/about) is a Windows-oriented package manager that enables users to install utilities (software) via the command line. Installing it on a Windows machine looks a bit tricky when consulting their documentation, but the underpinnins are quite simple. 
+
+:heavy_check_mark: We will use Chocolatey as a part of our Kubernetes development environment set up. 
+
+
+
 
 
 
