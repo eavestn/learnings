@@ -26,6 +26,12 @@ However, this document may not commonly cite its source.
 
 <img align="left" width="500" height="200" src="./assets/azure-pipelines.png">
 
+This diagram is a very crude representation of the high-level archicture of our deployment strategy: circles represent artifacts or environments; rectangles different "actions" performed by the pipeline. It is _very_ simple: [**1**] pull a copy of the code from the repository; [**2**] build the solution; and [**3**] drop the package in a location to be used by later stages.
+
+[**4**] The Release then picks up the package and [**5**] deploys it to the environment for which the Release is responsible. Transitions between various steps in this pipeline are "triggered" - or will happenly automatically. 
+
+
+
 ## Common Problems
 
 ### Project Configuration
