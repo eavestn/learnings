@@ -71,7 +71,7 @@ Some articles say that `<Content />` tags should be used in addition to expressi
 
 The result is certainly a cleaner experience in the Visual Studio IDE; however, it is unclear whether Azure DevOps actually supports these relationships. The relationship being expressed here is that `Web.Dev.config` needs to be applied to (merged with) `Web.config`. 
 
-However, what _is_ clear is that we can do these transformations using Azure DevOps Pipelines and do not half to rely upon an expressed relationship to do so (to be covered later). All you need to do is list each `*.config` file as its own `<Content />` tag (self closing is fine). Again, as we are taking away the relationship-expression resonsibilty from the IDE, we will fully rely upon Azure DevOps Pipelines and Releases for application of the configurations:
+However, what _is_ clear is that we can do these transformations using Azure DevOps Pipelines and do not half to rely upon an expressed relationship to do so (to be covered later). All you need to do is list each `*.config` file as its own `<Content />` tag (self closing is fine; order does not matter). Again, as we are taking away the relationship-expression resonsibilty from the IDE, we will fully rely upon Azure DevOps Pipelines and Releases for application of the configurations:
 
 ```xml
 	<Content Include="Web.config"></Content>
