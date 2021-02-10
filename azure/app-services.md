@@ -41,13 +41,25 @@ Unfortunately, deploying a .NET-based application to Azure App Services may requ
 
 `None` makes more sense in relationship to `Content`. `Content` is a file that has no influence on the build process of the project (it's not compiled _into_ the executable artifact); however, it may be included in the output of the build. `None`is literally "none": it doesn't do anything or need to go anywhere once the project is ready for distribution. A great example of `None` would be a `README.md` file or a `.gitignore` file.
 
+**TLDR;** Checking that you are using the right tag for your `Web.*.config` files is the first step to resolving frequently-encountered Azure Pipeline errors. Keep reading to learn more about which tag should be used and how it should be used.
+
 ##### Apparent Default Impact on Azure Pipelines 
 
 Both `None` and `Content` support a series of configurable attributes that can be included in the `.csproj` XML; however, it appears most challenges occur when considering the stated purposes' (_table above_) impact on an Azure Pipeline build. Said differently: `None` and `Content`'s purposes contribute to your Azure Pipeline's success (go figure).
 
-By default, files marked with `Content` _are included with the output of the Azure Pipeline build process_. 
+By default, files marked with `Content` _are included with the output of the Azure Pipeline build process_. `Content`-tagged resources will appear in the destination App Service.
 
-Files marked with `None` _don't do anything_.
+Files marked with `None` _don't do anything_. These files will not appear in the destination App Service. Additionally, any releationship expressed as a child of `None` seems to cause Azure DevOps Pipelines to complain (the errors for which are completely misleading and absolutely unrelated; the generated error - for which there is _no_ documentation on the internet other than sparse foreign-language forums - leads the reader to believe the issue is Git and image related).
 
-Any relationship expressed beneath "None" seems to cause the Pipeline to flip out (particularly `DependendtasdUpon` nested nodes or the attribute)
+Our `Web.*.config` files fall into this category: files we - ultimately - want distributed as a part of the deployment _and_ that should have no impact on the build, itself.
+
+**TLDR**; don't use `None` for resources you either [1] want to include in the build output or [2] with to express a relationship. Use `<Content />`.
+
+##### `<Content />`: To Add Relationships Or Not
+
+The motivation for moving our build and publication to the cloud is to completely divesting Visual Studio of its responsibility for building and deploying an application to a higher environment. We no longer want to do this manually - or, ideally, will no longer _need_ to (outside of local development).
+
+There is "debate" (or, rather, contradicting resources) on the interwebs: we know _not_ to use `None`; but what should we use and how? 
+
+
 
