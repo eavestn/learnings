@@ -41,7 +41,7 @@ Unfortunately, deploying a .NET-based application to Azure App Services may requ
 
 `None` makes more sense in relationship to `Content`. `Content` is a file that has no influence on the build process of the project (it's not compiled _into_ the executable artifact); however, it may be included in the output of the build. `None`is literally "none": it doesn't do anything or need to go anywhere once the project is ready for distribution. A great example of `None` would be a `README.md` file or a `.gitignore` file.
 
-**TLDR;** Checking that you are using the right tag for your `Web.*.config` files is the first step to resolving frequently-encountered Azure Pipeline errors. Keep reading to learn more about which tag should be used and how it should be used.
+::heavy_check_mark: **TLDR;** Checking that you are using the right tag for your `Web.*.config` files is the first step to resolving frequently-encountered Azure Pipeline errors. Keep reading to learn more about which tag should be used and how it should be used.
 
 ##### Apparent Default Impact on Azure Pipelines 
 
@@ -53,7 +53,7 @@ Files marked with `None` _don't do anything_. These files will not appear in the
 
 Our `Web.*.config` files fall into this category: files we - ultimately - want distributed as a part of the deployment _and_ that should have no impact on the build, itself.
 
-**TLDR**; don't use `None` for resources you either [1] want to include in the build output or [2] with to express a relationship. Use `<Content />`.
+:heavy_check_mark: **TLDR**; don't use `None` for resources you either [1] want to include in the build output or [2] with to express a relationship. Use `<Content />`.
 
 ##### `<Content />`: To Add Relationships Or Not
 
@@ -69,14 +69,14 @@ Some articles say that `<Content />` tags should be used in addition to expressi
   </Content>
 ```
 
-The result is certainly a cleaner experience in the Visual Studio IDE; however, it is unclear whether Azure DevOps actually supports these relationships. The relationship being expressed here is that `Web.Dev.config` needs to be applied to (merged with) `Web.config`.
+The result is certainly a cleaner experience in the Visual Studio IDE; however, it is unclear whether Azure DevOps actually supports these relationships. The relationship being expressed here is that `Web.Dev.config` needs to be applied to (merged with) `Web.config`. 
+
+However, what _is_ clear is that we can do these transformations using Azure DevOps Pipelines and do not half to rely upon an expressed relationship to do so (to be covered later). All you need to do is list each `*.config` file as its own `<Content />` tag (self closing is fine). Again, as we are taking away the relationship-expression resonsibilty from the IDE, we will fully rely upon Azure DevOps Pipelines and Releases for application of the configurations:
 
 ```xml
-	
-	<Content Include="Web.QA.config"></Content>
-	<Content Include="Web.Release.config"></Content>
-
+	<Content Include="Web.config"></Content>
+	<Content Include="Web.Dev.config"></Content>
 ```
 
-
+:heavy_check_mark: **TLDR;** Do not express `<DependentUpon />` relationships in your `<Content />` XML nodes.
 
