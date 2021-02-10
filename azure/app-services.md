@@ -8,6 +8,10 @@ Finding good, comprehensive documentation on errors commonly associated with dep
 
 ### Document Scope
 
+#### Assumptions
+
+You've got a correctly configured App Service with necessary RGs and SCs and are familiar with how those things work
+
 #### .NET Applications
 
 At this stage, this document only accounts for attempting to deploy a .NET-based web distributable to an Azure App Service. 
@@ -22,6 +26,8 @@ However, this document may not commonly cite its source.
 
 ## Architecture
 
+### Architecture Motivation
+
 Easiest to do (this document does not cover any of the necessary configuration of the app service you might need to make)
 
 ### High Level
@@ -32,6 +38,12 @@ This diagram is a very crude representation of the high-level archicture of our 
 
 [**4**] The Release then picks up the package and [**5**] deploys it to the environment for which the Release is responsible. Transitions between various steps in this pipeline are "triggered" - or will happenly automatically. 
 
+### Steps (Outline; Brief Description)
+
+#### Service Connections
+
+
+### Head Nod to YAML
 
 
 ## Common Problems
