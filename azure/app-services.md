@@ -41,7 +41,7 @@ Unfortunately, deploying a .NET-based application to Azure App Services may requ
 
 `None` makes more sense in relationship to `Content`. `Content` is a file that has no influence on the build process of the project (it's not compiled _into_ the executable artifact); however, it may be included in the output of the build. `None`is literally "none": it doesn't do anything or need to go anywhere once the project is ready for distribution. A great example of `None` would be a `README.md` file or a `.gitignore` file.
 
-::heavy_check_mark: **TLDR;** Checking that you are using the right tag for your `Web.*.config` files is the first step to resolving frequently-encountered Azure Pipeline errors. Keep reading to learn more about which tag should be used and how it should be used.
+:heavy_check_mark: **TLDR;** Checking that you are using the right tag for your `Web.*.config` files is the first step to resolving frequently-encountered Azure Pipeline errors. Keep reading to learn more about which tag should be used and how it should be used.
 
 ##### Apparent Default Impact on Azure Pipelines 
 
