@@ -20,6 +20,12 @@ The information in this document is largely anecdotal - the result of the hours 
 
 However, this document may not commonly cite its source.
 
+## Architecture
+
+### High Level
+
+<img align="left" width="250" height="75" src="./assets/azure-pipelines.png">
+
 ## Common Problems
 
 ### Project Configuration
