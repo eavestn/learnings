@@ -24,7 +24,7 @@ However, this document may not commonly cite its source.
 
 ### High Level
 
-<img align="left" width="450" height="150" src="./assets/azure-pipelines.png">
+<img align="left" width="500" height="200" src="./assets/azure-pipelines.png">
 
 ## Common Problems
 
