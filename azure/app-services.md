@@ -14,7 +14,7 @@ At this stage, this document only accounts for attempting to deploy a new distri
 
 ### Information Quality
 
-The information in this document is largely anecdotal - the result of the hours spent attempting to repurpose and deploy the legacy _CapCenter.OneSiteServer_ solution using Azure DevOps pipelines and releases. .NET applications are - despite using Microsoft's flagship framework - infamous for their [myriad, poorly-documented problems while being deployed to App Services](http://www.herlitz.nu/2020/01/10/web.config-transforms-not-working-in-azure-devops-pipeline/) (2020):
+The information in this document is largely anecdotal - the result of the hours spent attempting to repurpose and deploy a legacy solution using Azure DevOps pipelines and releases. .NET applications are - despite using Microsoft's flagship framework - infamous for their [myriad, poorly-documented problems while being deployed to App Services](http://www.herlitz.nu/2020/01/10/web.config-transforms-not-working-in-azure-devops-pipeline/) (2020):
 
 > This is a problem with many dimensions and can be caused by different misconfigurations. In this blog post, I will walk through the most common errors and how to fix them.
 
@@ -30,5 +30,5 @@ Unfortunately, deploying a .NET-based application to Azure App Services may requ
 
 ##### The Difference Between `<Content />` and `<None />` 
 
-This is important due to Azure Pipeline's packaging of the distributable.
+:warning: This is important due to Azure Pipeline's packaging of the distributable.
 
