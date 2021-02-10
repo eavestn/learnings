@@ -22,6 +22,8 @@ However, this document may not commonly cite its source.
 
 ## Architecture
 
+Easiest to do (this document does not cover any of the necessary configuration of the app service you might need to make)
+
 ### High Level
 
 <img align="left" width="500" height="200" src="./assets/azure-pipelines.png">
