@@ -59,7 +59,24 @@ Our `Web.*.config` files fall into this category: files we - ultimately - want d
 
 The motivation for moving our build and publication to the cloud is to completely divesting Visual Studio of its responsibility for building and deploying an application to a higher environment. We no longer want to do this manually - or, ideally, will no longer _need_ to (outside of local development).
 
-There is "debate" (or, rather, contradicting resources) on the interwebs: we know _not_ to use `None`; but what should we use and how? 
+There is "debate" (or, rather, contradicting resources) on the interwebs: we know _not_ to use `None`; but what tag should we use and how should we use it?
+
+Some articles say that `<Content />` tags should be used in addition to expressing relationships between various `<Content />`-tagged resources:
+
+```xml
+  <Content Include="Web.Dev.config">
+	  <DependentUpon>Web.config</DependentUpon>
+  </Content>
+```
+
+The result is certainly a cleaner experience in the Visual Studio IDE; however, it is unclear whether Azure DevOps actually supports these relationships. The relationship being expressed here is that `Web.Dev.config` needs to be applied to (merged with) `Web.config`.
+
+```xml
+	
+	<Content Include="Web.QA.config"></Content>
+	<Content Include="Web.Release.config"></Content>
+
+```
 
 
 
