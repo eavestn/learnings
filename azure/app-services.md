@@ -4,7 +4,7 @@
 
 ### Purpose
 
-The below document is intended to help a developer working to deploy applications to Azure App Services using Azure DevOps Pipelines or Releases.
+Finding good, comprehensive documentation on errors commonly associated with deploying a .NET-based application to Azure App Services is hard. The below document is intended to help a developer working to deploy applications to Azure App Services using Azure DevOps Pipelines or Releases. This document assumes an eventual architecture for both building and deploying your ASP .NET Web Application to Azure App Services.
 
 ### Document Scope
 
@@ -79,4 +79,6 @@ However, what _is_ clear is that we can do these transformations using Azure Dev
 ```
 
 :heavy_check_mark: **TLDR;** Do not express `<DependentUpon />` relationships in your `<Content />` XML nodes.
+
+
 
