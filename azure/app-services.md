@@ -8,9 +8,9 @@ The below document is intended to help a developer working to deploy application
 
 ### Document Scope
 
-#### Legacy .NET Applications
+#### .NET Applications
 
-At this stage, this document only accounts for attempting to deploy a new distributable to an Azure App Service. 
+At this stage, this document only accounts for attempting to deploy a .NET-based web distributable to an Azure App Service. 
 
 ### Information Quality
 
