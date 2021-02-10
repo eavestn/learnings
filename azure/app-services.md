@@ -49,3 +49,5 @@ By default, files marked with `Content` _are included with the output of the Azu
 
 Files marked with `None` _don't do anything_.
 
+Any relationship expressed beneath "None" seems to cause the Pipeline to flip out (particularly `DependendtasdUpon` nested nodes or the attribute)
+
